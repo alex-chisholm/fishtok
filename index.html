@@ -14,6 +14,15 @@
             padding: 0;
             overflow: hidden;
         }
+        .header {
+            width: 100%;
+            background-color: #111;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -21,6 +30,8 @@
             height: 100vh;
             overflow-y: auto;
             scroll-snap-type: y mandatory;
+            gap: 50px;
+            padding: 20px 0;
         }
         .post {
             width: 100vw;
@@ -49,6 +60,7 @@
     </style>
 </head>
 <body>
+    <div class="header">FishTok.Fish</div>
     <div class="container">
         <div class="post"><img src="img/image1.jpg" alt="Fish 1"><div class="caption">Caught a big one!</div></div>
         <div class="post"><img src="img/image2.jpg" alt="Fish 2"><div class="caption">Sunset fishing vibes</div></div>
