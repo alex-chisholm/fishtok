@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishTok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+        }
+        .post {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            scroll-snap-align: start;
+            background-color: #111;
+        }
+        .post img {
+            width: 90vw;
+            height: 80vh;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post"><img src="img/image1.jpg" alt="Fish 1"><div class="caption">Caught a big one!</div></div>
+        <div class="post"><img src="img/image2.jpg" alt="Fish 2"><div class="caption">Sunset fishing vibes</div></div>
+        <div class="post"><img src="img/image3.jpg" alt="Fish 3"><div class="caption">Another great catch</div></div>
+        <div class="post"><img src="img/image4.jpg" alt="Fish 4"><div class="caption">Fishing with friends</div></div>
+        <div class="post"><img src="img/image5.jpg" alt="Fish 5"><div class="caption">Early morning success</div></div>
+        <div class="post"><img src="img/image6.jpg" alt="Fish 6"><div class="caption">The biggest catch yet!</div></div>
+        <div class="post"><img src="img/image7.jpg" alt="Fish 7"><div class="caption">Peaceful waters</div></div>
+        <div class="post"><img src="img/image8.jpg" alt="Fish 8"><div class="caption">Fishing trip highlights</div></div>
+        <div class="post"><img src="img/image9.jpg" alt="Fish 9"><div class="caption">Hooked a rare one!</div></div>
+        <div class="post"><img src="img/image10.jpg" alt="Fish 10"><div class="caption">Ending the day strong</div></div>
+    </div>
+</body>
+</html>
